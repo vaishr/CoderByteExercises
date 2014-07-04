@@ -1,0 +1,11 @@
+function SimpleSymbols(str) { 
+  if ((str[0] >= 'a') || (str[str.length-1] >= 'a')) 
+    return false;
+  for (var i = 0; i<str.length; i++){
+    if (str[i] >= 'a' && (str[i+1]!='+' || str[i-1]!='+'))
+      return false;
+  }
+  return true;
+  // code goes here  
+         
+}

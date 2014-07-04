@@ -1,0 +1,19 @@
+function SwapCase(str) { 
+
+  var str = str.split("");
+  
+  var newArray = [];
+  
+  for (var i = 0; i<str.length; i++) {
+    if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+        if (str[i] === str[i].toLowerCase())
+          newArray.push(str[i].toUpperCase());
+        if (str[i] === str[i].toUpperCase())
+          newArray.push(str[i].toLowerCase());
+    }
+    else newArray.push(str[i]);
+  }
+  // code goes here  
+  return newArray.join(""); 
+         
+}

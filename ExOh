@@ -1,0 +1,14 @@
+function ExOh(str) { 
+
+  var numofXs= 0;// code goes here 
+  var numofOs= 0;
+  for (var i = 0; i< str.length; i++) {
+    if (str[i] == 'x' || str[i] == 'X')
+      numofXs++;
+    if (str[i] == 'o' || str[i] == 'O')
+      numofOs++;
+  }
+  
+  return (numofOs == numofXs);
+         
+}

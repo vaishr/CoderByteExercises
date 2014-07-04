@@ -1,0 +1,13 @@
+function FirstFactorial(num) { 
+
+  if (num === 1)
+    return 1;
+  else {
+    var product = 1;
+    for (i=1; i<=num; i++) {
+      product *= i;
+    }
+  return product; 
+  }
+         
+};

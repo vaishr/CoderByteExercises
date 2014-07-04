@@ -1,0 +1,13 @@
+function PrimeTime(num) { 
+  var value;
+  for (var i = 2; i<num; i++) {
+    if (num % i == 0) {
+      return value = false;
+      break;
+    }
+   }
+    
+    if (value != false) return true;
+   
+
+}
