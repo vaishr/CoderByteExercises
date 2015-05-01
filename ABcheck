@@ -1,11 +1,15 @@
 function ABCheck(str) {  
-  var str = str.split("");
-  for (var i = 0; i<str.length; i++) {
-    if ((str[i]=='a' && str[i+4]== 'b') || (str[i]=='b' && str[i+4]== 'a')) {
+  var string = str.split("");
+  for (var i = 0; i<string.length; i++) {
+    if (string[i]=='a' && string[i+4]== 'b') {
              return true;
-             break;
     }
-}
-  
-     return false;
+             
+    else if (string[i]=='b' && string[i+4]== 'a') {
+            return true;
+    }
+
+    else return false;
+    
+    }
 }
