@@ -1,0 +1,51 @@
+
+function DashInsert(num) { 
+ num = num.toString();
+ 
+ var arr = num.split("");
+ var newArr = [];
+ 
+ for (var i = 0; i<arr.length; i++) {
+    newArr.push(arr[i]);
+   if (arr[i] % 2 == 1 && arr[i+1] % 2 == 1)
+   {
+       newArr.push('-');
+   }
+ }
+var answer = newArr.join("");
+return answer;
+}
+
+
+
+
+
+//same thing, but with comments:
+function DashInsert(num) { 
+
+//convert number argument to string
+ num = num.toString();
+ 
+ //store each number at a diff index in an array
+ var arr = num.split("");
+  
+ //initialize a new array for updated values
+ var newArr = [];
+ 
+ for (var i = 0; i<arr.length; i++) {
+    
+    //push current number into newArr during iteration
+    newArr.push(arr[i]);
+ 
+   // if current and next numbers are odd, push '-' into newArr  
+     if (arr[i] % 2 == 1 && arr[i+1] % 2 == 1)
+   	{
+       	  newArr.push('-');
+   	}
+ }
+ 
+// convert array to string
+var answer = newArr.join("");
+
+return answer;
+}
