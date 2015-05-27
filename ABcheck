@@ -1,15 +1,11 @@
-function ABCheck(str) {  
-  var string = str.split("");
-  for (var i = 0; i<string.length; i++) {
-    if (string[i]=='a' && string[i+4]== 'b') {
-             return true;
-    }
-             
-    else if (string[i]=='b' && string[i+4]== 'a') {
-            return true;
-    }
-
-    else return false;
+function ABCheck(str) {
+    str = str.toLowerCase();
+    var arr = str.split("");
     
+    for (var i = 0; i< arr.length; i++) {
+        if ((arr[i] === 'a' && arr[i+4] == 'b') ||    (arr[i] === 'b' && arr[i+4] === 'a'))
+        return true;
     }
+    
+    return false;
 }
