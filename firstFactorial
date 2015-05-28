@@ -1,3 +1,5 @@
+//function should take a number and return the factorial of that number
+
 function FirstFactorial(num) {
 var value = num;
     for (var i= num - 1; i>0; i--) {
