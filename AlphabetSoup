@@ -1,7 +1,6 @@
 function AlphabetSoup(str) { 
   
-  var str = str.split("");
-  str = str.sort();
-  return str.join(""); 
+  str = str.split("").sort().join("");
+  return str; 
          
 }
