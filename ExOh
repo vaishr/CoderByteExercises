@@ -1,3 +1,5 @@
+//function should return true if there are the same number of x and o letters in a string
+
 function ExOh(str) { 
 
   var numofXs= 0;
