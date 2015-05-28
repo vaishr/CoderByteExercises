@@ -1,0 +1,18 @@
+//function should take a string and return the number of vowels in that string
+
+function vowelCounter(str) { 
+
+  str = str.toLowerCase();
+  
+  var vowels = ['a','e','i','o','u'];
+  var vowelCount = 0;
+  
+  for (var i=0; i<str.length; i++) {
+    for(var j=0; j<vowels.length; j++) {
+    if (str[i] === vowels[j])
+     vowelCount++;
+    }
+   }
+    
+  return vowelCount; 
+}
