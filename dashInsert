@@ -1,3 +1,5 @@
+//function should take a number and return a string with a dash inserted in between all odd numbers which next to each other.  ex. DashInsert(136578) should return '1-365-78' 
+
 
 function DashInsert(num) { 
  num = num.toString();
@@ -13,6 +15,7 @@ function DashInsert(num) {
    }
  }
 var answer = newArr.join("");
+
 return answer;
 }
 
