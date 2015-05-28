@@ -1,3 +1,5 @@
+//function should take a string and return true if the letters a and b are separately by exactly 3 characters at least once in the string or should return false if not
+
 function ABCheck(str) {
     str = str.toLowerCase();
     var arr = str.split("");
