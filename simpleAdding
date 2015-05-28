@@ -1,10 +1,12 @@
+//function should take a number argument and return the sum of all numbers from 1 to the argument
+
 function SimpleAdding(num) { 
 
-var total = 0;
-  for (var i=0; i<=num; i++)
-  {
-  total += i;
-  }
-  return total; 
-         
+var total = num;
+
+  for (var i= num-1; i>0; i--) {
+     total += i;
+   }
+  
+  return total;
 }  
