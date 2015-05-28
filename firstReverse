@@ -1,12 +1,10 @@
-function FirstReverse(str) { 
+//function should take a string and return that string in reversed order
 
-  var str = str.split("");
+function FirstReverse(str) { 
+  str = str.split("");
   var reverse = [];
   for (var i = str.length -1; i >=0; i--) {
      reverse.push(str[i]);
   }
-  
-  var str = reverse.join("");
-  return str; 
-
+  return reverse.join(""); 
 }
