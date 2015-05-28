@@ -1,3 +1,5 @@
+//function should take a string and return the string sorted alphabetically
+
 function AlphabetSoup(str) { 
   
   str = str.split("").sort().join("");
