@@ -4,6 +4,7 @@ function ExOh(str) {
 
   var numofXs= 0;
   var numofOs= 0;
+  
   for (var i = 0; i< str.length; i++) {
     if (str[i] == 'x' || str[i] == 'X')
       numofXs++;
