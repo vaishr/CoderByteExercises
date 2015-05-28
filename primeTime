@@ -1,13 +1,9 @@
-function PrimeTime(num) { 
-  var value;
-  for (var i = 2; i<num; i++) {
-    if (num % i == 0) {
-      return value = false;
-      break;
-    }
-   }
-    
-    if (value != false) return true;
-   
+//function should return true if argument is a prime number, and false if not
 
+function PrimeTime(num) { 
+  for (var i = 2; i<num; i++) {
+    if (num % i === 0) 
+      return false;
+   }
+  return true;
 }
