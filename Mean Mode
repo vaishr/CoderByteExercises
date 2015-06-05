@@ -6,7 +6,6 @@ var mean;
 var mode;
 var maxCount = 1;
 var obj = {};
-var result;
   
  arr = arr.sort(function(a,b) {return a-b});
  
