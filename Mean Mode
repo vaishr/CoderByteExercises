@@ -1,0 +1,35 @@
+//function should take an array of positive numbers and return 1 if the mode is equal to the mean, and 0 if the mode and mean are not equal (there will not be more than one mode in the array)
+
+function MeanMode(arr) { 
+var sum = 0;
+var mean;
+var mode;
+var maxCount = 1;
+var obj = {};
+var result;
+  
+ arr = arr.sort(function(a,b) {return a-b});
+ 
+  for (var i = 0; i<arr.length; i++) {
+    sum = sum + arr[i];
+    obj[arr[i]] = (obj[arr[i]] || 0) + 1; // add 1 to object property if it already exists, or create new property with value 1 
+  }
+  
+  mean = sum/(arr.length);
+  console.log("mean is " + mean); // for debugging
+  
+  for (var key in obj) {
+    if (obj[key] > maxCount) {
+      maxCount = obj[key];
+      mode = key;
+    }
+  }
+  
+  console.log("mode is " + mode); // for debugging
+  
+  if (mean === mode) {
+    return 1;
+  }
+  
+ return 0;        
+}
